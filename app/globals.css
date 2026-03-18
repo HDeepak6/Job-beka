@@ -11,14 +11,14 @@
 
 @layer base {
   body {
-    @apply bg-brand-bg text-brand-text antialiased;
+    @apply bg-brand-bg text-brand-text font-sans;
   }
 }
 
-.glass {
-  @apply bg-white/80 backdrop-blur-md border border-brand-border;
+.card-hover {
+  @apply transition-all duration-300 hover:border-brand-accent/20 hover:shadow-lg hover:shadow-brand-accent/5;
 }
 
-.card-hover {
-  @apply transition-all duration-200 hover:border-brand-accent/30 hover:shadow-sm;
+.glass-panel {
+  @apply bg-white/80 backdrop-blur-md border border-white/20 shadow-xl;
 }
